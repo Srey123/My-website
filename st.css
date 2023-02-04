@@ -1,0 +1,474 @@
+  *{
+
+    margin:0;
+    padding:0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* by using box-sizing we can change the size boder and paddin according to the text content  */
+    box-sizing: border-box;
+  }
+
+  body{
+    /* it will be the background colour */
+    background-image:url('h2.jpg');
+    /* it will be the text colour */
+    background-position:absolute;
+    position: sticky;
+    color:#fff;
+  } 
+
+  #header{
+    width:100%;
+    height:100vh;
+    background-image: url('.png');
+    background-size: cover;
+    background-position: center;
+    
+  }
+  .container{
+    padding: 10px 30px;
+  }
+  nav{
+    /* used to arrange the elemnts in particular way  */
+    display: flex;
+    /* in the container there n items arranged side by side becuse align them center */
+    align-items: center;
+    /* 0justify content seays start and end space between elements in the container */
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  nav ul li{
+    display: inline-block;
+    margin:20px 20px;
+    list-style:none;
+    
+
+  }
+
+  nav ul li a{
+
+    color:#fff;
+    text-decoration: none;
+    font-size:18px;
+    position: relative;
+
+  }
+
+  nav ul li a::after{
+    content:'';
+    width:0;
+    height:3px;
+    background-color: #ff004f;
+    position:absolute;
+ 
+  
+    bottom:-2px;
+    /* if we wont give left:0;by default it will move to right side of the link  */
+     left:0;
+    transition: 0.5s;
+
+
+  }
+
+ 
+nav ul li a:hover::after{
+    /* when we keep the cursor it shows the underline of 100% which mentioned in nav ul a::after */
+  
+    width:100%;
+  }
+
+  .name{
+    margin-top: 20%;
+  }
+  /* about*************** */
+ .my{
+  background-image:url('imgonline-com-ua-resize-TcPgZScvUJUKR.jpg');
+  background-size: cover;
+ }
+
+ #about{
+  padding-left: 5cm;
+ }
+
+ #about{
+  background-image:url('h2.jpg');
+  border-radius: 20px;
+  padding:10px 10px;
+  width: 1000px;
+  box-shadow:  5px 10px 18px red;
+ margin-left: 3cm;
+ margin-bottom: 2cm;
+}
+
+   #about{
+    font-size: 20px;
+    color: black;
+    font-style: bold;
+
+    
+    
+   
+    padding-top:2px;
+
+    
+   }
+   #mano{
+
+    background-color: grey;
+    border-radius: 20px;
+    box-shadow: 5px 3px 10px whitesmoke;
+    width: 3cm;
+   
+    font-style:normal;
+    text-align: center;
+    transition: background 0.5s,transform0.5s;
+
+   }
+
+   #m{
+    
+    background-color: grey;
+    border-radius: 10px;
+    box-shadow: 5px 3px 10px yellowgreen;
+    width: 2cm; 
+    text-align: center;
+    transition: background 0.5s,transform0.5s;
+   }
+
+   #n{
+    background-color: gray;
+    border-radius: 10px;
+    box-shadow: 5px 3px 10px yellowgreen;
+    width: 3cm; 
+    text-align: center;
+    text-align: center;
+    transition: background 0.5s,transform0.5s;
+   }
+
+   #r{
+    background-color:gray;
+    border-radius: 10px;
+    box-shadow: 5px 3px 10px yellowgreen;
+    width: 3cm; 
+    text-align: center;
+    text-align: center;
+    transition: background 0.5s,transform0.5s;
+   }
+   
+
+
+
+   #six{
+    padding-left: 100px;
+    padding-right: 20px;
+   }
+
+  
+
+.subtitles{
+  display:flex;
+
+
+  margin-top:10px;
+  margin-bottom: 10px;
+ 
+}
+.one {
+  margin-top:0px;  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+
+  font-size: 18px;
+  font-weight:500;
+  cursor: pointer;
+  position:relative;
+}
+.one::after{
+  content:'';
+  width:0%;
+  height:3px;
+  background-color: aqua;
+position:absolute;
+left:0;
+bottom:-2px;
+transition: 0.5s;
+}
+
+
+.content-link ul li{
+  list-style: none;
+  margin: 10px opx;
+  
+}
+.content-link ul li span{
+  font-size: 18px;
+}
+
+.content-link{
+  display: none;
+} 
+.content-link.active-tab{
+  display:block;
+}
+
+.content-link{
+  background-color:black;
+  border-radius: 20px;
+  padding:10px 10px;
+  width: 600px;
+  box-shadow:  5px 10px 18px whitesmoke;
+ margin-left: 5cm;
+ margin-bottom: 2cm;
+
+
+}
+
+.subtitles{
+
+text-decoration: none;
+
+
+padding: 15px 40px;
+border-radius: 4px;
+font-weight: normal;
+
+transition: all 0.2s ease-in-out;
+}
+
+
+
+
+glow-subtitles:hover {
+  color: black;
+  box-shadow: 5px 3px 10px yellowgreen;
+}
+.content{
+
+  background-image:url('black.jpg');
+  border-radius: 20px;
+  padding:10px 10px;
+  width: 800px;
+  height:375px;
+  
+  box-shadow:  5px 10px 18px whitesmoke;
+ margin-left: 1cm;
+ margin-bottom: 10mm;
+}
+/* services all styles */
+#services{
+  padding:20px 0;
+  
+}
+.services-list{
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap:40px;
+  margin-top:50px;   
+}
+.services-list div{
+background: #262626;
+padding:40px;
+font-size:13px;
+font-weight:300px;
+border-right:10px;
+border-radius: 10px;
+transition: background 0.5s,transform0.5s;
+}
+
+.services-list i{
+  font-size: 50px;
+}
+
+.services-list div h2{
+  font-size:30px;
+  font-weight:500;
+  margin-bottom:15px;
+  
+  /* its for all h2 tags in services */
+}
+.services-list a{
+  text-decoration: none;
+  color:#fff;
+  font-size: 12px;
+  margin-top:20px;
+  /* inline blockk is used to didpaly the link  and heading separete from text */
+display:inline-block;
+}
+.services-list div:hover{
+  background: #ff004f;
+transform:translateY(-9px);
+
+}
+
+#m:hover{
+  background:burlywood;
+  transform:translateY(0px)
+}
+#n:hover{
+  background:burlywood;
+  transform:translateY(0px);
+}
+#r:hover{
+  background:burlywood;
+  transform:translateY(0px);
+
+}
+
+#mano:hover{
+  background:greenyellow;
+  transform:translateY(0px);
+}
+#photo{
+  box-shadow:  5px 10px 18px red; 
+  border-radius: 200px;
+}
+
+/* my folder contains my all types of the work */
+#myfolder{
+  padding:50px 0;
+}
+.worklist{
+
+
+display:grid;
+grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+grid-gap:40px;
+margin-top:50px;
+ 
+}
+
+.work{
+  border-radius: 20px;
+  position:relative;
+  overflow:hidden;
+}
+
+.work img{
+  width:100%;
+  border-radius: 10px;
+  display:block; 
+  transition: tranform 0.5s;
+}
+.bottom{
+  width:100%;
+  height: 0;
+  /* linear gradient is mixture of two colours on any image or as background */
+  background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+  position:absolute;
+  border-radius: 10px;
+
+  bottom:0;
+  overflow:hidden;
+  display: flex;
+  align-items: center ;
+  justify-content: center;
+  flex-direction: column;
+  padding:0 40px;
+  text-align:center;
+  transition: height 0.5s;
+
+}
+.bottom h2{
+  font-weight: 400;
+  margin-bottom:20px;
+
+}
+.bottom a{
+  margin-top:20px;
+  text-decoration: none;
+  color:black;
+  font-size: 16px;
+  line-height: 60px;
+  background: #fff;
+  width:60px;
+  height:60px;
+  border-radius:60px;
+  text-align: center;
+}
+.work:hover img{
+  transform:scale(1.1);
+
+}
+
+.work:hover .bottom{
+  height: 100%;
+}
+
+.button  {
+
+  display:block;
+  
+  text-decoration: none;
+  margin:50px auto;
+  padding:13px 50px;
+  background-color: antiquewhite;
+  width:fit-content;
+border:1px solid #ff004f;
+border-radius:6px;
+color:#fff;
+transition: background 0.5s;
+ 
+}
+.button:hover{
+  background:grey;
+}
+.button a{
+  text-decoration: none;
+
+} 
+.contact-left{
+  flex-basis:35%;
+}
+.contact-right{
+  flex-basis: 65%;
+}
+.contact-right{
+  margin-left:15cm;
+}
+.social-icons{
+
+  
+  
+  font-size: medium;
+}
+  .social-icons{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    margin-top:20px;
+    
+    display:inline;
+    transition:transform 0.5s;
+    color:red;
+  }
+  .social-icons a span:hover{
+    color:white !important;
+    transform:translateX(-8px);
+
+  }
+  
+ 
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
