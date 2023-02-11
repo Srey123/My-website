@@ -11,6 +11,7 @@
     /* it will be the background colour */
     background-image:url('h2.jpg');
     /* it will be the text colour */
+    background-attachment: fixed;
     background-position:absolute;
     position: sticky;
     color:#fff;
@@ -28,6 +29,7 @@
     padding: 10px 30px;
   }
   nav{
+    background-attachment: fixed;
     /* used to arrange the elemnts in particular way  */
     display: flex;
     /* in the container there n items arranged side by side becuse align them center */
@@ -38,6 +40,7 @@
   }
 
   nav ul li{
+    background-attachment: fixed;
     display: inline-block;
     margin:20px 20px;
     list-style:none;
