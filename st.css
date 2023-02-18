@@ -39,6 +39,7 @@
     /* 0justify content seays start and end space between elements in the container */
     justify-content: space-between;
     flex-wrap: wrap;
+    width:100%;
   }
 
  
@@ -55,6 +56,7 @@
      display: inline-block;
     margin:20px 20px;
     list-style:none;
+    background-position: fixed;
     
 
   }
@@ -128,6 +130,7 @@ nav ul li a:hover::after{
     border-radius: 20px;
     box-shadow: 5px 3px 10px whitesmoke;
     width: 3cm;
+    
    
     font-style:normal;
     text-align: center;
@@ -173,16 +176,19 @@ nav ul li a:hover::after{
     padding-right: 20px;
    }
 
-  
+
 
 .subtitles{
   display:flex;
 
+margin-top:10px;
 
-  margin-top:10px;
-  margin-bottom: 10px;
+
+
  
 }
+
+
 .one {
   margin-top:0px;  margin-left: 50px;
   margin-right: 50px;
@@ -227,10 +233,15 @@ transition: 0.5s;
   padding:10px 10px;
   width: 600px;
   box-shadow:  5px 10px 18px whitesmoke;
+ 
  margin-left: 5cm;
  margin-bottom: 2cm;
 
 
+}
+
+.content-link:hover {
+  transform: scale(1.1, 1.1);
 }
 
 .subtitles{
@@ -261,9 +272,13 @@ glow-subtitles:hover {
   height:375px;
   
   box-shadow:  5px 10px 18px whitesmoke;
+  
  margin-left: 1cm;
  margin-bottom: 10mm;
 }
+
+
+
 /* services all styles */
 #services{
   padding:20px 0;
@@ -461,9 +476,10 @@ transition: background 0.5s;
   nav ul{
     
     width:100%;
-    background:linear-gradient(black,black);
+    padding-left: 5cm;
+    background:linear-gradient();
     position:absolute;
-    top:75px;
+    top:10px;
     right:0;
     z-index:2;
    
