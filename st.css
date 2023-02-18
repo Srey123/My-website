@@ -466,6 +466,7 @@ transition: background 0.5s;
   nav .fas{
     display: block;
     font-size: 25px;
+    padding-left: 20cm;
   }
 
   nav ul{
@@ -475,7 +476,7 @@ transition: background 0.5s;
     right:-200px;
     width: 200px;
     height:100vh;
-    padding-top: 50px;
+    padding-top:50px;
   }
 
   nav ul li{
