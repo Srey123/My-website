@@ -13,13 +13,17 @@
     /* it will be the text colour */
     background-attachment: fixed;
     background-position:absolute;
-    position: sticky;
+    
     color:#fff;
+    width:100%;
   } 
 
 
   .container{
-    padding: 10px 30px;
+    
+    width:100%;
+    background-size: cover;
+    background-position: center;
   }
 
 
@@ -753,65 +757,7 @@ glow-subtitles:hover {
 
 
 
-/* services all styles */
-/* #services{
-  padding:20px 0;
-  
-}
-.services-list{
-  display:grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-  grid-gap:40px;
-  margin-top:50px;   
-}
-.services-list div{
-background: #262626;
-padding:40px;
-font-size:13px;
-font-weight:300px;
-border-right:10px;
-border-radius: 10px;
-transition: background 0.5s,transform0.5s;
-}
 
-.services-list i{
-  font-size: 50px;
-}
-
-.services-list div h2{
-  font-size:30px;
-  font-weight:500;
-  margin-bottom:15px;
-  
-  /* its for all h2 tags in services */
-/* } */
-/* .services-list a{
-  text-decoration: none;
-  color:#fff;
-  font-size: 12px;
-  margin-top:20px;
-  /* inline blockk is used to didpaly the link  and heading separete from text */
-/* display:inline-block;
-}
- .services-list div:hover{ 
-  background: #ff004f;
-transform:translateY(-9px);
-
-
-
-#m:hover{
-  background:burlywood;
-  transform:translateY(0px)
-}
-#n:hover{
-  background:burlywood;
-  transform:translateY(0px);
-}
-#r:hover{
-  background:burlywood;
-  transform:translateY(0px);
-
-} */
 
 /*#mano:hover{
   background:greenyellow;
@@ -897,27 +843,74 @@ margin-top:50px;
   height: 100%;
 }
 
-.button a{
+
+
+#see {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
   text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
-.button  {
-
-  display:block;
-  
- 
-  margin:50px auto;
-  padding:13px 50px;
-  background-color: antiquewhite;
-  width:fit-content;
-border:1px solid #ff004f;
-border-radius:6px;
-color:#fff;
-transition: background 0.5s;
- 
+#see:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
 }
-.button:hover{
-  background:grey;
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+#see:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
 }
 
 
@@ -962,9 +955,9 @@ a:hover:after {
     display: none;
 
   }
-@media only screen and (max-width:600px){
+/* @media only screen and (max-width:400px 100max-height:){ */
 
-  nav .fas{
+  /* nav .fas{
     display: block;
     font-size: 25px;
     padding-top:0cm;
@@ -993,6 +986,26 @@ a:hover:after {
     cursor:pointer;
 
   }
+  #photo{
+    padding-left:150px;
+
+  }
+  #status{
+   
+    font-size: 15px;
+   
+    margin-left:200px;
+   
+   
+    
+  }
+  .new{
+    display: flex;
+  }
+
+  .worklist{
+    display: inline-block;
+  }
 
   
 
@@ -1000,7 +1013,7 @@ a:hover:after {
    
 
  }
-
+ */
 
 
 
