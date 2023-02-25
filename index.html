@@ -1,37 +1,35 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
+    
+<head>
 
+       <meta charset="UTF-8">
         <!-- IT COVERS ALL CHARACTERS PUNCUATIONS AND SYMBOLSFROM YHE KEYOARD -->
-
-        <meta charset="UTF-8">
-        <!-- it says which type of browser we need that sholud reach oour web site -->
-
         <META http-equiv="X-UA-compatible" content="IE=edge">
-
+         <!-- it says which type of browser we need that sholud reach oour web site -->
+          <meta name="viewport" content="width-device-width, initial-scale=1.0">
            <!-- The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device). -->
             <!-- The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser. -->
-
-            <meta name="viewport" content="width-device-width, initial-scale=1.0">
+            
+                             <!-- META DATA ENDS HERE -->
 
             <link rel="icon" type="image/x-icon" href="android-chrome-192x192.png">
-            <title>My Website</title>        
-<link rel="stylesheet" href="st.css">
-<script src="https://kit.fontawesome.com/a333153df5.js" crossorigin="anonymous"></script>
-<!-- font awesome used to create or take free icons -->
+
+           <title>My Website</title> 
+
+          <link rel="stylesheet" href="st.css">
+     <!-- relating css file to chane style of  my webpage -->
+      <script src="https://kit.fontawesome.com/a333153df5.js" crossorigin="anonymous"></script>
+      <!-- font awesome used to create or take free icons OR   cd for inserting all types of icons --> 
+</head>
 
 
-    </head>
 <body>
 
-    
+<section class="navbar">
 
-
-<!-- header section -->
-
-   
-        <div class="container">
+            <div class="container">
             <nav>
         <img src="mylogo.png" width="100px" height="100px" >
         <ul class="na">
@@ -39,78 +37,79 @@
         <li><a href="#projects">projects</a></li>
         <li><a href="#Experience"><span style="color:red">Experience </span></a></li>
         <li><a href="#Education" >Education</a></li>
-        
         </ul>
-        <i class=" fas fa-bars"></i>
+        
         </nav>
          </div>
-    <br>
+        <br>
         <br>
         <br>
         <br>
 
-        
-        
+</section>
 
-          
+        
+        
+<!-- my photo at middle of webpage -->
+<section class="myphoto">
+
           <center <p> <img src="IMG20220709200217h.png" id="photo">
             <br>
             <br>
-
-               <h2><p id="status">Student at IIITDM Chennai</p></p>
-                
-        
+           <h2><p id="status">Student at IIITDM Chennai</p></p>
             <p id="oo">Hi,I'm <span style="color:red">Manohar</span> from Hyderabad</p> </h2>
-</center>
+            </center>
             <br>
             <br>
             <br>
+
+</section>
 
             
-<!-- this is all about the header section in the webpage -->
 
-    <!-- now i was using separate division about my selff -->
-    <!-- *****************about********* -->
+<!-- ABOUT ME -->
+<section class="myself">
     
-<div id="about">
+           <div id="about">
+             <p id="mano" >About me</p>
+             <br>
+             <br>
+             <div class="content" id="about me">
 
-    
-    <br>
-   
-         <p id="mano" >About me</p>
-        <br>
-        <br>
-          <div class="content" id="about me">
-            <font style="color:white">
-            <p>
+            <font style="color:white"><p>
                 <b><span style="padding-left:2cm"> <span style="color:red">I</span> presently persuing 2nd year of my graduation in computter science <span style="padding:2cm">Engineering at<span style="color:red"> IIITDM Kancheepuram.</span> </span></span> <br><br>
                      <span style="padding:2cm"><span style="color:red">At</span> present my scope was to learn about<span style="color:red"> software devolopment,</span>which <span style="padding:1cm"> has many attributes like,wed design, web application,web devolopment.</span><br><span style="padding:1cm" >As web devolopment has front end amd backend,both of them need different <span style="padding:1cm">tools.I deeply going through that tools to understand the scope of software,</span> <span style="padding-left:1cm">devolopment.</span> <br> <br>
                 <span style="padding-left:2cm" ><span style="color:red">My</span> future dream is to be an a Fullstack Devoloper in current IT, <span style="padding:1cm">Technology.Iam fully passionate about this technology.</span></p></b>
-            </p>
-        </font>
-          </div>
-        </div>
-    
-
-        <br>
-        <br>
-
-        <div class="govt">
-
-       
-        <div class="subtitles">
-            <p  id="m"  class="one active-link" onclick="opentab('skills')"><span style= "color:
-            white">Skills</span> </p>
-            <!-- function open tsb is used to call the class name -->
-            <p   id="n" class="one" onclick="opentab('Experience')"><span style="color:white">Experience</span></p>
-            <p   id="r"  class="one"  onclick="opentab('Education')"> <span style="color:white">Education</span></p>
+            </p></font>
 
             </div>
         </div>
+            </div>
+              <br>
+             <br>
 
-           
+</section>
 
-               <div class="content-link active-tab" id="Skills">
+  <!-- SKILLS EXPERIENCE AND EDUCATION -->
+<section class="briefaboutme">
+
+        <section class="navbarbrieftaboutme">
+
+              <div class="subtitles">
+
+              <p  id="m"  class="one active-link" onclick="opentab('skills')"><span style= "color:
+               white">Skills</span> </p>
+              <!-- function open tsb is used to call the class name -->
+              <p   id="n" class="one" onclick="opentab('Experience')"><span style="color:white">Experience</span></p>
+              <p   id="r"  class="one"  onclick="opentab('Education')"> <span style="color:white">Education</span></p>
+
+              </div>
+    </section>
+        
+
+          
+
+    <div class="content-link active-tab" id="Skills">
 
                 <center><img src="skillsjhjh-modified (1).png"></center>
             <ul>
@@ -121,26 +120,28 @@
                <li> <h3><span style="color:red">Blogger</span></h3></li>
                 <li> <span style = "color:grey"> Content writer</span></li>
             </ul>
-    
-              </div>
+    </div>
             
 
-            <div class="content-link" id="Experience">
+        
+    <div class="content-link" id="Experience">
+
               <center>  <img src="expeience-modified (1).png"></center>
               <ul>
-              <li> 
-             <span style="color:red"><h3>programming</h3></span>
-              <p><span style = "color:grey">march(2022) - continoues--</span></p></li>
+              <li><span style="color:red"><h3>programming</h3></span>
+                <p><span style = "color:grey">march(2022) - continoues--</span></p></li>
 
                <li><span style="color:red"><h3> Web Devoloper</h3></span>
-              <p><span style = "color:grey"> basic web devoloper from 2021 march and continues</span></p></li>
+               <p><span style = "color:grey"> basic web devoloper from 2021 march and continues</span></p></li>
 
               <li>  <span style="color:red"><h3>Blogger</h3></span>
               <p> <span style = "color:grey"> from 2019 to 2021 dec </span> </p></li>
 
-              </ul><br>
+               </ul>
+               <br>
 
-            </div>
+    </div>
+
 
       <div class="content-link" id="Education">
         <center> <img src="manohar.png"></center>
@@ -148,103 +149,71 @@
                 <li><p><h3><span style="color:red"> Vijaya High school,manulapur nirmal </span></h3> <span style="color:grey"> (2013-2019)5th standard-10th standard </span></p><br></li>
                 <li><p><h3><span style="color:red">TTWEMRS marrimadla siricilla telangana</span></h3><span style="color:grey">(2019-2021) 11th standard-12th standard</span> </p> <br></li>
                 <li><p><h3><span style="color:red">IIITDM Kancheepuram,tamil nadu, chennai, india </span></h3><span style="color:grey">2022-present 2^nd year</span></p><br></li>
-</ul>
-    
- 
-</div>
-</div> 
+          </ul>
+       </div>
+       </section>
 
+<!-- PROJECTS -->
+<section class="my projects">
+ 
 <div id="projects" class="background-alt">
-    <h2 class="heading" id="g">Projects</h2>
+
+<h2 class="heading" id="g">Projects</h2>
     <div class="container">
-        <div class="row">
+
+        
+
+    <section  class="project11">
+
             <div class="project shadow-large">
+
                 <div class="project-image">
                     <img src="alu.JPG" height="300px" width="168px"/>
                 </div>
                 <!-- End .project-image -->
-                <div class="project-info">
-                    <h3 span style ="color:antiquewhite"><b>Construction of 4 bit ALU</b></h3>
-                    <p <span style="background-color:black"></span>
-                       <b> A CPU consists of three main sections: memory for variables (registers), control circuitry (microcode), and the ALU. The ALU (Arithmetic Logic Unit) is the part of a CPU that actually does calculations and condition testing.</b>
-                    </p>
-                        
-                   <a href="https://drive.google.com/file/d/1SollcD1S4l0zeR0Tfow_IAQ4yzkUZ9J2/view?usp=sharing" target="blank" id="k">View Project</a>
-                </div>
-                <!-- End .project-info -->
-            </div>
-            <!-- End .project -->
 
-            <div class="project shadow-large">
+                <div class="project-info">
+
+                    <h3 span style ="color:antiquewhite"><b>Construction of 4 bit ALU</b></h3>
+                      <p <span style="background-color:black"></span>
+                       <b> A CPU consists of three main sections: memory for variables (registers), control circuitry (microcode), 
+                        and the ALU. The ALU (Arithmetic Logic Unit) is the part of a CPU that actually does calculations and condition testing.</b</p>
+                       <a href="https://drive.google.com/file/d/1SollcD1S4l0zeR0Tfow_IAQ4yzkUZ9J2/view?usp=sharing" target="blank" id="k">View Project</a>
+                
+                </div>
+                <!-- endproject info -->
+            
+
+    </section>
+                                                           <!-- End .project11 -->
+
+
+<div class="project shadow-large">
+
                 <div class="project-image">
                     <img src="cloths.png" height="300px" width="168px"/>
                 </div>
                 <!-- End .project-image -->
-                <font style="color:whitesmoke">
+
+            <font style="color:whitesmoke">
                 <div class="project-info">
                     
                     <h3 span style="color: antiquewhite;"><b>AUTO RESPONSE OF THE CLOTH DRYING CLIPS</b></h3>
-                    <p>
-                        <b>The Project is to describe about the Auto response of the cloth drying clips.<b></p>
+                    <p><b>The Project is to describe about the Auto response of the cloth drying clips.<b></p>
                     <a href="https://drive.google.com/file/d/1esreuVaPs911SpyboueF2e3gffu6S73w/view?usp=sharing" id="j" target="blank">View Project</a>
                 </div>
             </font>
                 <!-- End .project-info -->
             </div>
-            <!-- End .project -->
+                                                                        <!-- End .project -->
         </div>
     </div>
-</div>
-<!-- End #projects -->
 
-<!-- above the is closing tah of about -->
-<!-- <div id="services">
-<br>
-    <div class="container">
-
-       <h1 class="titles"> My Services</h1>
-
-       <div class="services-list">
-
-         <div>
-            <i class="fa-solid fa-code"></i>
-       <h2>programming</h2>
-             <p>Programming is the process of creating a set of instructions. </p>
-                
-                <a href="https://www.futurelearn.com/info/courses/programming-101/0/steps/43783" target="_blank">Learn more</a>
-            </div>
-
-            <div>
-                <i class="fa-solid fa-blog"></i>
-      <h2>Web devoloper</h2>
-      <p>
-        Web developers create and maintain websites.
-       </p>
-      <a href="https://www.geeksforgeeks.org/web-technology/" target="_blank">Learn more</a>
-
-            </div>
-            <div>
-                <i class="fa-brands fa-blogger-b"></i>
-        <h2>
-            
-            Blogger
-        </h2>
-        <p>
-            A blogger is a content writer who publish the information.
-        </p>
-        <a href="https://firstsiteguide.com/what-is-blog/" target="_blank"><span style="color:black"></span> Learn more</span></a>
-
-            </div>
-            </div>
-
-       </div>
+</section>
 
 
-
-</div>
-
-<!-- portfolio from now onwards -->
-<section class="new">
+                         
+<section class="My work">
 
 <div id="myfolder">
     <div class="container">
@@ -295,111 +264,81 @@
 </div>
 </section>
 
-<div id="contact">
-    <div class="container">
- <div class="row">
-   <center> <div class="content-left">
+
+
+<section id="contact">
+    
+<div class="container">
+
+  <div class="Mypersonal">
+    
+      <center> <div class="content-left">
        <h1 class="subtite">Contact Me</h1>
        <br>
        <p><i class="fa-solid fa-envelope-circle-check"></i> kethavathmanohar@gmail.com</p>
        <p><i class="fa-solid fa-phone"></i>+917036569701</p>
-   </center>
+      </center>
+
+  </div>    
+   
        <br>
-       <center><div class="social-icons" >
+
+    <div class="social-icons" ><center>
         <a href="https://www.facebook.com/" target="_blank"><span  style="color:red"><i class="fa-brands fa-facebook"></i></span></a>
         <a href="https://www.instagram.com" target="_blank"><span  style="color:red"><i class="fa-brands fa-instagram"></i></span></a>
         <a href="https://twitter.com/?lang=en-in" target="_blank"><span  style="color:red"><i class="fa-brands fa-twitter-square"></i></span></a>
         <a href="https://in.linkedin.com/company/linkedin"target="_blank"><span  style="color:red"><i class="fa-brands fa-linkedin"></i></span></a>
         <a href="https://github.com/Srey123/My-website" target="_blank"><span  style="color:red"><i class="fa-brands fa-github"></i></span></a>
-       </div>
-    </center>
+          
+          
+       </center>
+
     </div>
+    <h3 style="text-align: center;">&#169; manohar 2023</h3>
 
    
-    </div>
 
-
- </div>
-
-    </div>
-
-
-
+   
 </div>
 
 
+</section>
+
+  
+
+<!-- /this java script is used for alternating my skills experience education by  onclick -->
+<!-- to -->
+
+<section class="javascript">
 
 
-
-
-
-
-
-<script>
+        <script type="text/javascript">
     
         
     var contents = document.getElementsByClassName("one");
     // Here is the important element that used to access the html elemnt and this the use of the java script
     var tables = document.getElementsByClassName("content-link");   
     // here we are getting the elemnt by the ava  script function called get elemnt by the id
-   
-    function opentab(tabname){
+   function opentab(tabname){
         for(content of contents){
-            
-// instead of one we can use any other variable thats puprpose of mt interest i took it //
-             content.classList.remove("active-link");   
-
-        }  
-            
-
-        
-
-        for(table of tables){
-            table.classList.remove("active-tab");
-
+    // instead of one we can use any other variable thats puprpose of mt interest i took it //
+         content.classList.remove("active-link");   
         }
+            
+                for(table of tables){
+            table.classList.remove("active-tab");
+             }
+
+             
         event.currentTarget.classList.remove("active-link")
         document.getElementById(tabname).classList.add("active-tab");
-        
-        
-
-
-
-
-       
-       
-        // here when tabname comes 135 line tab recives the id education
-     
-    }
-
-</script>  
-
-
-
-
-
-
-    
-
-   
-
-
-
-
-
-
- 
-
-
-
-
+    } 
+    // here when tabname comes 135 line tab recives the id education
+    </script>
+    </section>
 
 </body>
-
-
-
-        
-        </html>
+</html>
     
 
  

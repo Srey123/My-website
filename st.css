@@ -16,11 +16,10 @@
     
     color:#fff;
     width:100%;
-  } 
+  }
 
 
   .container{
-    
     width:100%;
     background-size: cover;
     background-position: center;
@@ -41,14 +40,12 @@
 
  
   nav ul li{
-    
-     display: inline-block;
+    display: inline-block;
     margin:20px 20px;
     list-style:none;
     background-position: fixed;
-    
-
   }
+
 
   nav ul li a{
 
@@ -56,8 +53,8 @@
     text-decoration: none;
     font-size:18px;
     position: relative;
-
   }
+
 
   nav ul li a::after{
     content:'';
@@ -65,31 +62,20 @@
     height:3px;
     background-color: #ff004f;
     position:absolute;
- 
-  
-    bottom:-2px;
+     bottom:-2px;
     /* if we wont give left:0;by default it will move to right side of the link  */
      left:0;
-    transition: 0.5s;
-
-
+     transition: 0.5s;
   }
 
  
 nav ul li a:hover::after{
     /* when we keep the cursor it shows the underline of 100% which mentioned in nav ul a::after */
-  
     width:100%;
   }
 
-  .name{
-    margin-top: 20%;
-  }
-  /* about*************** */
- .my{
-  background-image:url('imgonline-com-ua-resize-TcPgZScvUJUKR.jpg');
-  background-size: cover;
- }
+
+                                          /* about me */
 
  #about{
   padding-left: 5cm;
@@ -113,6 +99,7 @@ nav ul li a:hover::after{
 
     
    }
+                                       /* button for aboutme */
 
    #mano {
     padding: 0.6em 2em;
@@ -430,7 +417,7 @@ glow-subtitles:hover {
 
 
 
-/* CSS */
+
 #m {
   padding: 0.6em 2em;
   border: none;
@@ -499,71 +486,8 @@ glow-subtitles:hover {
 }
 
 
-#g {
-  padding: 0.6em 2em;
-  border: none;
-  outline: none;
-  color: rgb(255, 255, 255);
-  background: #111;
-  cursor: pointer;
-  position: relative;
-  z-index: 0;
-  border-radius: 10px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
 
-#g:before {
-  content: "";
-  background: linear-gradient(
-    45deg,
-    #cac6c6,
-    #ff7300,
-    #fffb00,
-   
-  );
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background-size: 400%;
-  z-index: -1;
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  animation: glowing-button-85 20s linear infinite;
-  transition: opacity 0.3s ease-in-out;
-  border-radius: 10px;
-}
-
-@keyframes glowing-button-85 {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
-
-#g:after {
-  z-index: -1;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #222;
-  left: 0;
-  top: 0;
-  border-radius: 10px;
-}
-
-
-
-
+                                 /* section of proects */
 
 #projects h2{
   color:white;
@@ -571,18 +495,22 @@ glow-subtitles:hover {
   padding-top:30px;
   padding-left:3cm;
 }
+                                  /* background & tittle  section */
 .background-alt{
   background-image: url('11.jpg');
   border-radius: 100px;
- 
+
 }
+                                   
 .project-info a{
   text-decoration: none;
   color: #fff;
-}
+} 
+                                     /* ends for title  section */
 
 
-
+     
+                                    /* projects = section of view projects button */
 #k {
   all: unset;
   width: 100px;
@@ -718,6 +646,10 @@ glow-subtitles:hover {
   transition: 0s;
   transform: translate(0, 5%);
 }
+                                                    /* End of view button section */
+
+
+                                                    /* back ground for each projects section */
 
 .project{
   position:relative;
@@ -729,6 +661,8 @@ glow-subtitles:hover {
 .project-image{
   float:left
 }
+                                             /*  end back ground for each projects section */
+                                             
 .project-info{
   position:absolute;top:50%;
   transform:translateY(-50%);
@@ -745,40 +679,14 @@ glow-subtitles:hover {
   margin:0 0 15px 0;
   font-size:0.9em
 }
-.no-image .project-info{
-  position:relative;
-  margin:0;
-  padding:30px 15px;
-  transform:none
-}#more-projects{
-  display:none;
-}
+                                                  /* section of projects end here */
 
 
-
-
-
-
-/*#mano:hover{
-  background:greenyellow;
-  transform:translateY(0px);
-}
- #photo{
-  box-shadow:  5px 10px 18px red; 
-  border-radius: 200px;
-}  */
-
-
-
-
-
-/* my folder contains my all types of the work */
+                                              /* section of my work */
 #myfolder{
   padding:50px 0;
 }
 .worklist{
-
-
 display:grid;
 grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
 grid-gap:40px;
@@ -913,6 +821,8 @@ margin-top:50px;
   border-radius: 10px;
 }
 
+                                      /* sections of contact  */
+
 
 
 
@@ -951,98 +861,6 @@ a:hover:after {
 
   }
 
-  nav  .fas{
-    display: none;
-
-  }
-/* @media only screen and (max-width:400px 100max-height:){ */
-
-  /* nav .fas{
-    display: block;
-    font-size: 25px;
-    padding-top:0cm;
-    padding-left:0px;
-  }
-
-  nav ul{
-    background:grey;
-    position:fixed;
-    top:0;
-    right:-200px;
-    width: 200px;
-    height:100vh;
-    padding-top:50px;
-  }
-
-  nav ul li{
-    display:block;
-    font-size: 25px;
-  }
-
-  nav ul .fas{
-    position:absolute;
-    top:23px;
-    left:25px;
-    cursor:pointer;
-
-  }
-  #photo{
-    padding-left:150px;
-
-  }
-  #status{
-   
-    font-size: 15px;
-   
-    margin-left:200px;
-   
-   
-    
-  }
-  .new{
-    display: flex;
-  }
-
-  .worklist{
-    display: inline-block;
-  }
-
-  
-
-  
-   
-
- }
- */
-
-
-
-  
-
-  
-  
  
-
-  
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
+ 
 
