@@ -824,9 +824,6 @@ margin-top:50px;
                                       /* sections of contact  */
 
 
-
-
-
 a:hover:after {
   color:#231f20;
 }
@@ -861,6 +858,112 @@ a:hover:after {
 
   }
 
- 
- 
 
+
+  
+
+
+
+
+   @media  (max-width:600px){
+    body{
+      background-attachment: fixed;
+      max-width: 600px;
+    }
+    nav .fas{
+      display:flex;
+    }
+
+    #photo{
+      padding-left:190px;
+    }
+    .phone{
+      padding-left:200px;
+      max-width: 600px;;
+      align-items: center;
+    }
+    #about{
+      max-width: 500px;
+      max-height:400px;
+
+    }
+    .content{
+      max-width: 400px;
+      max-height:200px;
+      font-size: 10px;
+
+    }
+    .content-link{
+      width:400px;
+    }
+    
+     
+     
+
+    
+
+    nav ul {
+      padding-left:10px;
+    }
+    .subtitles{
+    
+     
+      max-width:500px;
+      padding-right:30px;
+    }
+    #photo1{
+      width:100px;
+      height:100px;
+    }
+   
+
+    #photo2{
+      width:100px;
+      height:100px;
+    }
+
+    #photo3{
+      width:100px;
+      height:100px;
+    }
+      #img1{
+        height:179px;
+        width: 200px;
+
+      }
+
+      #img2{
+        height:179px;
+        width: 200px;
+
+      }
+
+      #img3{
+        height:179px;
+        width: 200px;
+
+      }
+      .worklist{
+        max-width:600px;
+        display:flex;
+        flex-direction: row;
+      }
+
+      .background-alt{
+        max-width: 500;
+        padding-left:30px;
+      }
+      .project .shadow-large{
+        max-width:300px;
+      }
+    }
+    
+
+
+
+
+
+
+
+    
+ 
