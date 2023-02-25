@@ -865,17 +865,22 @@ a:hover:after {
 
 
 
-   @media  (max-width:600px){
+   @media  (max-width:400px){
     body{
       background-attachment: fixed;
-      max-width: 600px;
+      max-width: 100%;
+      overflow-x: hidden;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
-    nav .fas{
-      display:flex;
+    
+    nav{
+      max-width: 600;
     }
 
     #photo{
       padding-left:190px;
+      height:200px;
     }
     .phone{
       padding-left:200px;
@@ -898,18 +903,27 @@ a:hover:after {
     }
     
      
-     
-
-    
-
     nav ul {
       padding-left:10px;
+      max-width:300px;
+      display:flex;
+      flex-direction: row;
     }
+    
+   #oo{
+    font-size: 10px;
+   }
+   #status{
+    font-size: 15px;
+   }
     .subtitles{
     
      
       max-width:500px;
       padding-right:30px;
+    }
+    .container{
+      max-width: 650;
     }
     #photo1{
       width:100px;
@@ -926,13 +940,13 @@ a:hover:after {
       width:100px;
       height:100px;
     }
-      #img1{
-        height:179px;
-        width: 200px;
+      
 
+      .project-info{
+        max-width: 300px;
       }
 
-      #img2{
+      /* #img2{ 
         height:179px;
         width: 200px;
 
@@ -943,6 +957,7 @@ a:hover:after {
         width: 200px;
 
       }
+      /*  */
       .worklist{
         max-width:600px;
         display:flex;
@@ -950,12 +965,112 @@ a:hover:after {
       }
 
       .background-alt{
-        max-width: 500;
-        padding-left:30px;
+        max-width:100%;
+        padding-left: 10%;
+        box-shadow: none;
+        border-radius: 0%;
+        background-image: none;
+        
+       
       }
       .project .shadow-large{
-        max-width:300px;
+        max-width:80%;
+        max-height:200px;
+        position: relative;
+        font-size: 10px;
+        border-radius:none;
+      
+        
       }
+      #photo4{
+        height:300px;
+        width:100px;
+      }
+      .project11{
+        max-width: 500px;
+      }
+      .project-info{
+        
+        margin-left: 100px;
+        max-width: 500px;
+
+
+      }
+
+      #photo5{
+        height:300px;
+        width:100px;
+
+      }
+      .work{
+        font-size: 10px;
+      }
+
+
+
+
+      .bottom{
+        width:100%;
+        height: 0;
+        /* linear gradient is mixture of two colours on any image or as background */
+        background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+        position:absolute;
+        border-radius: 10px;
+      
+        bottom:0;
+        overflow:hidden;
+        display: flex;
+        align-items: center ;
+        justify-content: center;
+        flex-direction: column;
+        padding:0 40px;
+        text-align:center;
+        transition: height 0.5s;
+      
+      }
+      .bottom h2{
+        font-weight: 400;
+        margin-bottom:20px;
+      
+      }
+
+      .bottom a{
+        margin-top:20px;
+        text-decoration: none;
+        color:black;
+        font-size: 5px;
+        line-height:3cm;
+        background: #fff;
+        width:0px;
+        height:0px;
+        border-radius:100px;
+        text-align: center;
+      }
+#logo1{
+  height:fit-content;
+  max-width: fit-content;
+}
+
+.work:hover img{
+  transform:scale(1.1);
+
+}
+
+.work:hover .bottom{
+  height: 100%;
+}
+#maa{
+  font-size:0px;
+}
+.#contact{
+  margin:50%;
+}
+
+
+     
+      
+      
+      
     }
     
 
